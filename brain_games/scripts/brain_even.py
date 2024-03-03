@@ -20,5 +20,9 @@ def brain_noteven():
             break
 
 
-if __name__ == '__main__':
+def main():
     brain_noteven()
+
+
+if __name__ == '__main__':
+    main()
