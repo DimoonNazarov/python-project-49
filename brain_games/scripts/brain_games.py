@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
 
-from brain_games.scripts.brain_even import brain_noteven
+from brain_games.scripts.brain_even import even
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    brain_noteven()
+    even()
 
 
 if __name__ == '__main__':

@@ -4,7 +4,7 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def brain_noteven():
+def even():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     k = 0
@@ -22,9 +22,5 @@ def brain_noteven():
             break
 
 
-def main():
-    brain_noteven()
-
-
 if __name__ == '__main__':
-    main()
+    even()
