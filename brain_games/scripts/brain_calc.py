@@ -21,6 +21,7 @@ def calc():
                 print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(real_answer)}'.")
+            print("Let's try again, {name}!")
             break
 
 
