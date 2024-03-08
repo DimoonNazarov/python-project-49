@@ -5,7 +5,7 @@ import math
 import brain_games.cli
 
 
-def calc():
+def gcd():
     name = brain_games.cli.welcome_user()
     print('Find the greatest common divisor of given numbers.')
     k = 0
@@ -25,6 +25,6 @@ def calc():
 
 
 if __name__ == "__main__":
-    calc()
+    gcd()
 
         
