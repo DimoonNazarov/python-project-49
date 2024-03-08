@@ -11,7 +11,7 @@ def calc():
     for i in range(3):
         first, second = random.randint(1, 20), random.randint(1, 20)
         print("Question: ", end='')
-        real_answer= f"{first} {random.choice('-*+')} {second}"
+        real_answer = f"{first} {random.choice('-*+')} {second}"
         print(real_answer)
         answer = prompt.integer("Your answer: ")
         if eval(real_answer) == answer:
@@ -21,7 +21,7 @@ def calc():
                 print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(real_answer)}'.")
-            print("Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             break
 
 
