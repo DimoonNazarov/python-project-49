@@ -7,7 +7,6 @@ def progression():
     name = brain_games.cli.welcome_user()
     print('What number is missing in the progression?')
     k = 0
-    
     for i in range(3):
         print("Question: ", end="")
         start, delta = random.randint(1, 20), random.randint(1, 20)
@@ -18,7 +17,7 @@ def progression():
                 hidden_number = start + i * delta
             else:
                 print(start + i * delta, end=" ")
-        print()   
+        print()
         answer = prompt.integer("Your answer: ")
         if answer == hidden_number:
             print("Correct!")
