@@ -18,7 +18,7 @@ def is_prime(number: int) -> bool:
 
 def prime():
     name = brain_games.cli.welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     k = 0
     for i in range(3):
         random_number = random.randint(1, 100)
