@@ -3,8 +3,8 @@ import brain_games.cli
 
 
 def main():
-    name = brain_games.cli.welcome_user()
-
+    print('Welcome to the Brain Games!\n')
+    name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     
 
