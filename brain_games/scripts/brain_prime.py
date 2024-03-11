@@ -30,7 +30,7 @@ def prime():
             if k == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f"'yes' is wrong answer ;(.\nCorrect answer was 'no'. Let's try again, {name}!")
+            print(f"'yes' is wrong answer ;(.Correct answer was 'no'. Let's try again, {name}!")
             break
 
 
