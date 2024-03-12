@@ -19,7 +19,8 @@ def gcd():
             if k == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{math.gcd(first, second)}'.")
+            print(f"'{answer}' is wrong answer ;(.", end="")
+            print(f"Correct answer was '{math.gcd(first, second)}'.")
             print(f"Let's try again, {name}!")
             break
 

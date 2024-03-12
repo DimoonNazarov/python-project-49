@@ -20,7 +20,8 @@ def calc():
             if k == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{eval(real_answer)}'.")
+            print(f"'{answer}' is wrong answer ;(.", end="")
+            print("Correct answer was '{eval(real_answer)}'.")
             print(f"Let's try again, {name}!")
             break
 

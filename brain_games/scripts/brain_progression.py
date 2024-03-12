@@ -26,7 +26,8 @@ def progression():
                 print(f"Congratulations, {name}!")
                 break
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{hidden_number}'.")
+            print(f"'{answer}' is wrong answer ;(.", end="")
+            print(f"Correct answer was '{hidden_number}'.")
             print(f"Let's try again, {name}!")
             break
 
