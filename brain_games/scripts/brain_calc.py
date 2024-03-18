@@ -1,30 +1,9 @@
-#!/usr/bin/env python3
-import random
-import prompt
-import brain_games.cli
+import brain_games.games.calc 
+from brain_games.game_engine import engine
 
 
-def calc():
-    name = brain_games.cli.welcome_user()
-    print('What is the result of the expression?')
-    k = 0
-    for i in range(3):
-        first, second = random.randint(1, 20), random.randint(1, 20)
-        print("Question: ", end='')
-        real_answer = f"{first} {random.choice('-*+')} {second}"
-        print(real_answer)
-        answer = prompt.integer("Your answer: ")
-        if eval(real_answer) == answer:
-            print("Correct!")
-            k = k + 1
-            if k == 3:
-                print(f"Congratulations, {name}!")
-        else:
-            print(f"'{answer}' is wrong answer ;(.", end="")
-            print("Correct answer was '{eval(real_answer)}'.")
-            print(f"Let's try again, {name}!")
-            break
-
+def main():
+    engine(brain_games.games.calc.calculator)
 
 if __name__ == "__main__":
-    calc()
+    main()
