@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-import prompt
+from brain_games.scripts.cli import welcome_user
+
+
+def greeting():
+    print('Welcome to the Brain Games!')
 
 
 def main():
-    """Interact with user."""
-    print('Welcome to the Brain Games!\n')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    greeting()
+    welcome_user()
 
 
 if __name__ == '__main__':
